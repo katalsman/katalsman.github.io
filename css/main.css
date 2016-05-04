@@ -1,0 +1,331 @@
+/**{
+  background-color: white;
+  color: green;
+  outline: 1px solid red;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  width: 100%;
+  font-size: 20px;
+}
+
+.header {
+  width: 100%;
+  position: absolute;  /*should be FIXED in final*/
+  background-color: transparent;
+  bottom: auto;
+  padding-top: 0;
+  margin: 0 auto;
+  margin-top: 25px;
+  bottom: auto;
+}
+
+.navbar {
+  border-radius: none;
+  width: auto;
+  border: 0;
+  margin: 0;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: 'Poiret One', sans-serif;
+  outline: 2px solid white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    display: inline-block;
+    padding-left: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  width: auto;
+}
+
+.navbar li a {
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    padding: 10px;
+    background-color: ;
+    text-decoration: none;
+    height: auto;
+    color: white;
+
+}
+
+.navbar li a:hover {
+  display:block;
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+  opacity: .4
+}
+
+.landing {
+  height: 791px;
+  width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+
+  }
+
+.toggle-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 800px;
+  transition: opacity 1s ease-in-out;
+}
+
+.first-image {
+	background-image: url('../images/cover_photos/imgp9481.jpg');
+	z-index: -3;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('../images/cover_photos/italy.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url('../images/cover_photos/047 copy.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.intro {
+  display: block;
+  float: left;
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  margin-top: 275px;
+  margin-left: 75px;
+  text-transform: uppercase;
+}
+
+H1 {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+P {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 25px;
+}
+
+
+#about {
+  width: 100%;
+  height: 800px;
+  clear: both;
+  background-color: black;
+  color: white;
+  padding-top: 90px;
+  overflow: auto;
+
+}
+
+.section {
+  margin: 0 auto;
+  font-family: 'Poiret One', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  clear: both;
+}
+
+
+.tag {
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 63px;
+}
+
+.tag H4 {
+  margin-top: 10px;
+  font-family:'Poiret One', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.profilephoto {
+  border: 5px solid white;
+  width: 300px;
+  height: auto;
+  max-height: 435px;
+  max-width: 310px;
+
+}
+
+
+#about p {
+  width: auto;
+  height: 30%;
+  padding-right: 15%;
+  margin-top: 60px;
+  margin-bottom: 45px;
+  font-size: 1em;
+  max-height: 425px;
+  min-width: 350px;
+  overflow: scroll;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+
+#project-section {
+  clear: both;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding-top: 50px;
+}
+
+
+.project {
+  display:inline-block;
+}
+
+.box {
+  height: 275px;
+  width: 275px;
+  padding: 10px;
+  margin: 20px;
+  background-color: black;
+  overflow: auto;
+
+}
+
+.box:hover {
+  background-color: black;
+  opacity: .8;
+
+}
+
+.thumbnail {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+}
+
+.box1 {
+
+}
+
+.box2 {
+
+}
+
+.box3 {
+
+}
+
+.box4 {
+
+}
+
+p.blurb {
+  text-align: center;
+}
+
+footer {
+  height: 162px;
+  width: 100%;
+  background-color: black;
+  clear: both;
+
+}
+
+.footer {
+  font-family: 'Poiret One', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 65px;
+  letter-spacing: 4px;
+
+}
+
+
+@media screen and (max-width: 990px) {
+
+.tag {
+  display: none;
+}
+
+#about p {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  max-height: none;
+  padding: 0;
+  line-height: 35px;
+  height: auto;
+  overflow: auto;
+  font-size: .7em;
+}
+
+#about {
+  height: auto;
+
+}
+
+#project-section {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.footer {
+  font-size: .8em;
+}
+
+@media screen and (max-width: 680px) {
+
+
+}
+
+}
