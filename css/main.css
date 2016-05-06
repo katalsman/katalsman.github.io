@@ -103,7 +103,7 @@ body {
 }
 
 .first-image {
-	background-image: url('../images/cover_photos/imgp9481.jpg');
+	background-image: url('../images/cover_photos/cover1.jpg');
 	z-index: -3;
 	opacity: 0;
 }
@@ -214,6 +214,9 @@ P {
   line-height: 30px;
 }
 
+.break {
+  display: none;
+}
 
 #project-section {
   clear: both;
@@ -289,9 +292,19 @@ footer {
 
 }
 
+@media screen and (max-width: 1285px) {
+  .break {
+    display: block;
+  }
+}
 
-@media screen and (max-width: 990px) {
 
+@media screen and (max-width: 1024px) {
+
+.navbar {
+  margin-left: 30%;
+  margin-right: 30%;
+}
 .tag {
   display: none;
 }
